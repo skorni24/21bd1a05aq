@@ -30,7 +30,6 @@ async function register() {
         },
       }
     );
-    // Handle the response here
   } catch (error) {
     console.error("Error registering with test server:", error);
   }
