@@ -17,11 +17,11 @@ async function register() {
     const response = await axios.post(
       "http://20.244.56.144/test/register",
       {
-        CompanyName: "DMart",
+        CompanyName: "AMZ",
         OwnerName: "Srinivas",
-        RollNo: "1",
-        OwnerEmail: "rahul@abc.edu",
-        accessCode: "EKDLjg",
+        RollNo: "21bd1a05ar",
+        OwnerEmail: "srinivaskorni2@gmail.com",
+        accessCode: "osDvxf",
       },
       {
         headers: {
