@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { TextField, MenuItem, Button, Box } from '@mui/material';
+import React, { useState } from "react";
+import { TextField, MenuItem, Button, Box } from "@mui/material";
 
 const Filters = ({ onFilter }) => {
-  const [category, setCategory] = useState('');
-  const [company, setCompany] = useState('');
-  const [rating, setRating] = useState('');
-  const [minPrice, setMinPrice] = useState('');
-  const [maxPrice, setMaxPrice] = useState('');
+  const [category, setCategory] = useState("");
+  const [company, setCompany] = useState("");
+  const [rating, setRating] = useState("");
+  const [minPrice, setMinPrice] = useState("");
+  const [maxPrice, setMaxPrice] = useState("");
 
   const handleApplyFilters = () => {
     onFilter({ category, company, rating, minPrice, maxPrice });
@@ -26,7 +26,6 @@ const Filters = ({ onFilter }) => {
         <MenuItem value="Laptop">Laptop</MenuItem>
         <MenuItem value="Phone">Phone</MenuItem>
         <MenuItem value="Tablet">Tablet</MenuItem>
-        {/* Add more categories here */}
       </TextField>
       <TextField
         select
@@ -40,7 +39,6 @@ const Filters = ({ onFilter }) => {
         <MenuItem value="ANZ">ANZ</MenuItem>
         <MenuItem value="FLP">FLP</MenuItem>
         <MenuItem value="SNP">SNP</MenuItem>
-        {/* Add more companies here */}
       </TextField>
       <TextField
         label="Rating"
